@@ -5,20 +5,20 @@ const counterSlice = createSlice({
     name : "counter",
     initialState : initialCounterSlice,
     reducers : {
-        increase(){
-
+        increase(state){
+            state.counter++;
         },
 
-        decrease(){
-
+        decrease(state){
+            state.counter--;
         },
 
-        increaseByFive(){
-
+        increaseByFive(state,action){
+            state.counter = state.counter + action.payload;
         },
 
-        toggle(){
-
+        toggle(state){
+            state.isShow = !state.isShow
         },
     },
 });

@@ -1,5 +1,6 @@
 import React from 'react'
 import {useSelector, useDispatch} from "react-redux"
+import { counterAction } from '../Store';
 
 const Counter = () => {
     const dispatch = useDispatch();
@@ -7,19 +8,19 @@ const Counter = () => {
     const isShow = useSelector((state)=>state.isShow)
 
     const increaseHandler = () =>{
-        dispatch({type : "increase"})
+        dispatch(counterAction.increase())
     }
 
     const decreaseHandler = () =>{
-        dispatch({type : "decrease"});
+        dispatch(counterAction.decrease());
     }
 
     const increaseByFive = () => {
-        dispatch({type : "IncreaseFive", amount : 5 })
+        dispatch(counterAction.increaseByFive(5))
     }
 
     const toggleHandler = () => {
-        dispatch({type : "toggle" })
+        dispatch(counterAction.toggle())
     }
 
   return (
