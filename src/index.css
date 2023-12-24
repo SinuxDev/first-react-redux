@@ -1,7 +1,8 @@
 *{
   font-family: "Poppins",sans-serif;
+  padding: 0;
+  margin: 0;
 }
-
 
 section{
   text-align: center;
@@ -9,7 +10,7 @@ section{
   width: 80%;
   margin: 50px auto;
   border-radius: 8px;
-  padding: 8px 8px;
+  padding: 30px 20px;
 }
 
 button{
@@ -21,4 +22,41 @@ button{
   border-radius: 8px;
   font-size: 17px;
   flex-wrap: wrap;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: antiquewhite;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 5px;
+}
+
+nav button{
+  background-color: royalblue;
+  padding: 8px 10px;
+  margin: 3px 6px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-size: 17px;
+  flex-wrap: wrap;
+}
+
+.welcome-sec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.welcome-btn{
+  background-color: blue;
+  color: white;
+  padding: 15px;
 }
