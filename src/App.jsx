@@ -6,17 +6,9 @@ import Welcome from "./Components/Welcome";
 
 function App() {
 
-  const isLogin = useSelector((state) => state.auth.isLogin)
-
   return (
     <>
-        <Navbar />
-        {
-          !isLogin && <Welcome />
-        }
-        {
-          isLogin && <Counter />
-        }
+      <h1>Hello I'm async Redux</h1>      
     </>
   );
 }
