@@ -4,41 +4,8 @@
   margin: 0;
 }
 
-section{
-  text-align: center;
-  background-color: antiquewhite;
-  width: 80%;
-  margin: 50px auto;
-  border-radius: 8px;
-  padding: 30px 20px;
-}
-
 button{
   background-color: white;
-  padding: 8px 10px;
-  margin: 3px 6px;
-  border: none;
-  outline: none;
-  border-radius: 8px;
-  font-size: 17px;
-  flex-wrap: wrap;
-}
-
-nav{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: antiquewhite;
-}
-
-nav ul li {
-  display: inline-block;
-  padding: 5px;
-}
-
-nav button{
-  background-color: royalblue;
   padding: 8px 10px;
   margin: 3px 6px;
   border: none;
